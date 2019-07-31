@@ -1,0 +1,49 @@
+{
+  "groups": [
+    {
+      "name": "swagger",
+      "type": "cn.superbio.spbbase.core.swagger.SwaggerProperties",
+      "sourceType": "cn.superbio.spbbase.core.swagger.SwaggerProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "swagger.enabled",
+      "type": "java.lang.String",
+      "sourceType": "cn.superbio.spbbase.core.swagger.SwaggerProperties",
+      "description": "是否启用Swagger",
+      "defaultValue": false
+    },
+    {
+      "name": "swagger.title",
+      "type": "java.lang.String",
+      "sourceType": "cn.superbio.spbbase.core.swagger.SwaggerProperties",
+      "description": "Api文档标题",
+      "defaultValue": "Api文档"
+    },
+    {
+      "name": "swagger.description",
+      "type": "java.lang.String",
+      "sourceType": "cn.superbio.spbbase.core.swagger.SwaggerProperties",
+      "description": "Api文档描述"
+    },
+    {
+      "name": "swagger.version",
+      "type": "java.lang.String",
+      "sourceType": "cn.superbio.spbbase.core.swagger.SwaggerProperties",
+      "description": "Api文档版本"
+    },
+    {
+      "name": "swagger.terms-of-service-url",
+      "type": "java.lang.String",
+      "sourceType": "cn.superbio.spbbase.core.swagger.SwaggerProperties",
+      "description": "服务条款Url"
+    },
+    {
+      "name": "swagger.base-package",
+      "type": "java.lang.String",
+      "sourceType": "cn.superbio.spbbase.core.swagger.SwaggerProperties",
+      "description": "待显示的接口的包（设置则采用包扫描的方式，只支持单个包路径）"
+    }
+  ]
+}

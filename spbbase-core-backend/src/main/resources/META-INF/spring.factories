@@ -1,0 +1,4 @@
+# AutoConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  cn.superbio.spbbase.core.backend.mybatisplus.MybatisPlusAutoConfiguration,\
+  cn.superbio.spbbase.core.backend.properties.DefaultProperties

@@ -1,0 +1,2 @@
+rootProject.name = 'biz-finance-root'
+includeFlat 'biz-finance', 'biz-finance-service-api', 'biz-finance-web', 'eureka-server','spbbase-core', 'spbbase-core-backend', 'spbbase-core-frontend', 'spbbase-gateway'

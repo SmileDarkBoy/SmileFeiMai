@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: smile-eureka
+
+server:
+  port: 8761
+
+eureka:
+  server:
+    #  # 测试时关闭自我保护机制，保证不可用服务及时踢出
+    enable-self-preservation: false
+    #  #剔除失效服务间隔
+    eviction-interval-timer-in-ms: 5000
+  instance:
+    hostname: localhost
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    register-with-eureka: false
+    fetch-registry: false

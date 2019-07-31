@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: biz-finance-web
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://erueka-master.superbio.cn:8100/eureka/,http://erueka-slave.superbio.cn:8101/eureka/
+#    enabled: true
+#  instance:
+#    prefer-ip-address: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    enabled: true
+  instance:
+    prefer-ip-address: true
+swagger:
+  enabled: true
+  base-package: cn.superbio.judicial.cloud.biz.finance.controller
+
+#feign客户端启动hystrix断路保护
+feign:
+  hystrix:
+    enabled: true
+
+ribbon:
+  ReadTimeout: 40000 #处理超时时间
+  ConnectTimeout: 4000 #连接超时时间
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000 #断路切换超时
+server:
+  port: 8090
